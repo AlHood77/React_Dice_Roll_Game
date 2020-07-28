@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Die from './Die';
-import NickName from './NickName';
 import './RollDice.css'
 
 class RollDice extends Component {
@@ -35,7 +34,11 @@ class RollDice extends Component {
         setTimeout(() => {
             this.setState({ isRolling: false });
         }, 1000);
+
+       
     }
+
+   
 
     // nickname() {
     //     if ((this.state.die1 === 'one') && (this.state.die2 === 'one')) {
@@ -95,12 +98,16 @@ class RollDice extends Component {
 
         return (
             <div className="RollDice">  
+                
+                <audio preload="auto">
+	<source src="https://alexerlandsson.github.io/assets/codepen/roll-the-dice/sound/dice-sound.mp3"></source>
+</audio>
                 <div className="RollDice-die-container">
                     <Die face={this.state.die1} rolling={this.state.isRolling} />
                     <Die face={this.state.die2} rolling={this.state.isRolling}/>
                 </div>    
 
-                <button onClick={this.roll} disabled={this.state.isRolling}>
+                <button onClick={this.roll}  disabled={this.state.isRolling}>
                     {this.state.isRolling ? 'Rolling...' : 'Roll Dice!'}
                 </button>
                 <p>{this.nickName()}</p>

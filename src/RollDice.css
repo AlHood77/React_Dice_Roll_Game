@@ -1,12 +1,17 @@
 .RollDice {
     display: flex;
-    flex-flow: column nowrap;
+    /* flex-flow: column nowrap; */
+    flex-direction: column-reverse;
     min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .RollDice-die-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 4rem;
 }
 
 .RollDice button {
@@ -19,8 +24,19 @@
     background-color: black;
     margin-top: 3em;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .RollDice button:hover {
     background-color: darkslateblue;
+}
+
+.RollDice p {
+    color: white;
+    font-size: 30px;
+    background-color: rgba(71, 61, 139, 0.74);
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    border: .5px solid white;
 }

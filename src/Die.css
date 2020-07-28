@@ -1,12 +1,21 @@
 .Die {
     font-size: 10em;
     padding: 0.25em;
-    color: slategray;
+    color: #E3E6D4;
 }
+
+
 
 .shaking {
     animation-name: wobble;
     animation-duration: 1.5s;
+}
+
+
+
+.fa-dice-one:before, .fa-dice-two:before, .fa-dice-three:before, .fa-dice-four:before, .fa-dice-five:before, .fa-dice-six:before  {
+    border-radius: 100%;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.021) 0%, rgba(2,0,36,1) 40%, rgba(2,0,36,1) 60%, rgba(255, 255, 255, 0) 100%);
 }
 
 @keyframes wobble {
