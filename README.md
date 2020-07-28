@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Practising React state, props and containers.
+
+Roll the dice and see the colourful nicknames for each die combination.
+
+![screenshot](src/Craps_Screenshot.png)
 
 ## Available Scripts
 
